@@ -244,3 +244,54 @@ body * {
     width: 207px;
     margin: 0 0 0 20px;
 }
+
+.ic-projects {
+    padding-top: 107px;
+}
+
+.ic-projects-img-box {
+    height: 482px;
+    width: 679px;
+}
+
+.ic-projects-admiral-img {
+    background-image: url("../images/projects-admiral.png");
+}
+
+.ic-projects-admiral-mobile-img {
+    background-image: url("../images/projects-admiral-mobile.png");
+}
+
+.ic-control-video-img {
+    background-image: url("../images/work-progress.png");
+    position: relative;
+    z-index: -2;
+}
+
+.ic-control-video-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.ic-repair-img-box {
+    height: 421px;
+    width: 392px;
+}
+
+.ic-repair-redecorating-img {
+    background-image: url("../images/repair-redecorating.png");
+}
+
+.ic-repair-overhaul-img {
+    background-image: url("../images/repair-overhaul.png");
+}
+
+.ic-repair-designer-img {
+    background-image: url("../images/repair-designer.png");
+}
