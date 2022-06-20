@@ -19,20 +19,228 @@
     font-style: normal;
 }
 
-.font-nunito-regular{
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+a {
+    text-decoration-line: none;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+b {
+    color: #E3B873;
     font-weight: 400;
     font-style: normal;
 }
 
-.font-nunito-italic{
+body {
+    margin: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.button-full {
     font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    font-weight: 400;
     font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
 }
 
-.font-nunito-regular{
-    font-family: 'Yeseva One', Times, 'Times New Roman', serif;
+.button-empty {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: italic;
     font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: transparent;
+    outline: 0;
+    border: 1px solid #FFFFFF;
+    border-radius: 2px;
+}
+
+.button-full, .button-empty:hover {
+    cursor: pointer;
+}
+
+.title {
+    font-family: 'Yeseva One', 'Trebuchet MS', Times, serif;
     font-style: normal;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.subtitle {
+    font-family: 'Yeseva One', 'Trebuchet MS', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.card-title {
+    font-family: 'Yeseva One', 'Trebuchet MS', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+.text-p {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.text-list {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.text-card {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 180%;
+    /* or 23px */
+    color: #959595;
+}
+
+.text-input {
+    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 23px;
+}
+
+.ic-section-black {
+    background-color: #131313;
+}
+
+.ic-section-white {
+    background-color: white;
+}
+
+.ic-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 83px;
+    max-width: 1256px;
+    min-width: 1100px;
+    margin: 0 auto;
+    font-family: 'Nunito Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+}
+
+.ic-logo {
+    display: flex;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.ic-header-nav {
+    display: flex;
+    color: #FFFFFF;
+    list-style: none;
+}
+
+.ic-header-nav-item {
+    margin-right: 47px;
+}
+
+.ic-phone {
+    display: flex;
+    text-align: right;
+    color: #E3B873;
+}
+
+.ic-phone a {
+    text-decoration-line: underline;
+    color: #E3B873;
+}
+
+.button-header {
+    padding: 13px 33px;
+    height: 37px;
+    width: 161px;
+}
+
+.ic-body-container {
+    max-width: 1171px;
+    margin: 0 auto;
+}
+
+.ic-intro-img {
+    background-image: url("../images/intro-background.png");
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+    position: relative;
+    z-index: -2;
+}
+
+.ic-intro-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: -1;
+}
+
+.ic-intro-title {
+    font-size: 40px;
+    line-height: 53px;
+    width: 514px;
+    color: #FFFFFF;
+}
+
+.ic-intro-text {
+    font-size: 22px;
+    line-height: 36px;
+    width: 514px;
+    color: #FFFFFF;
+}
+
+.button-body-cost {
+    padding: 20px 42px;
+    height: 51px;
+    width: 207px;
+}
+
+.button-body-application {
+    padding: 20px 22px;
+    height: 51px;
+    width: 207px;
+    margin: 0 0 0 20px;
 }
