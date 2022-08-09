@@ -8,23 +8,23 @@
     <title>SF Lab 02: Landing page project</title>
 </head>
 <body>
-    <header class="ic-section-black">
-        <div class="ic-header-container">
-            <div class="ic-logo">
+    <header class="section-black">
+        <div class="header-container" id="home">
+            <div class="logo">
                 IC "Repair Design Project"
             </div>
             <nav>
-                <ul class="ic-header-nav">
-                    <li class="ic-header-nav-item"><a href="#""><b>HOME</b></a></li>
-                    <li class="ic-header-nav-item"><a href="#"">PROJECTS</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">MEASUREMENT</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">TEAM</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">REVIEWS</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">CONTACTS</a></li>
+                <ul class="header-nav">
+                    <li class="header-nav-item"><a href="#home"><b>HOME</b></a></li>
+                    <li class="header-nav-item"><a href="#projects">PROJECTS</a></li>
+                    <li class="header-nav-item"><a href="#repair">MEASUREMENT</a></li>
+                    <li class="header-nav-item"><a href="#control">TEAM</a></li>
+                    <li class="header-nav-item"><a href="#clients">REVIEWS</a></li>
+                    <li class="header-nav-item"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
-            <div class="ic-phone">
-                <a href="#"">+7 (928) 768-32-39</a>
+            <div class="header-phone">
+                <a href="#">+7 (928) 768-32-39</a>
             </div>
             <button class="button-full button-header">
                 Request a call
@@ -32,10 +32,10 @@
         </div>
     </header>
     <main>
-        <section class="ic-intro-img ic-section-black">
-            <div class="ic-body-container">
-                <h1 class="title ic-intro-title">Turnkey Repair in the city of <b>Rostov-on-Don</b></h1>
-                <p class="text-p ic-intro-text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
+        <section class="intro-screen section-black">
+            <div class="body-container">
+                <h1 class="title intro-title">Turnkey Repair in the city of <b>Rostov-on-Don</b></h1>
+                <p class="text-p intro-text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
                 <button class="button-full button-body-cost">
                     Calculate the cost
                 </button>
@@ -44,11 +44,65 @@
                 </button>
             </div>
         </section>
-        <section class="ic-projects ic-section-black">
-            <div class="ic-body-container"></div>
+        <section class="projects section-black" id="projects">
+            <div class="body-container">
+                <div class="projects-container">
+                    <div class="projects-column-left">
+                        <div>
+                            <h2 class="title projects-title">Completed<br> projects</h2>
+                            <p class="text-p projects-text">Only a small part of the work performed by our company is presented on the site. For 14 years on in the construction<br> market we have made happy more than 1000 families</p>
+                        </div>
+                        <div class="projects-grid">
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">City:</h3>
+                                <p class="text-p projects-subtext">Rostov-on-Don<br> LCD admiral</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Apartment area:</h3>
+                                <p class="text-p projects-subtext">81 m2</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Repair time:</h3>
+                                <p class="text-p projects-subtext">3.5 months</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Repair cost:</h3>
+                                <p class="text-p projects-subtext">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="projects-arrow-nav">
+                            <a class="projects-slider"><span class="projects-arrow-left"></span></a>
+                            <a class="projects-slider" id="click-admiral"><span class="projects-bullet bullet-active"></span></a>
+                            <a class="projects-slider" id="click-thieves"><span class="projects-bullet bullet-inactive"></span></a>
+                            <a class="projects-slider" id="click-patriotic"><span class="projects-bullet bullet-inactive"></span></a>
+                            <a class="projects-slider"><span class="projects-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="projects-column-right">
+                        <ul class="projects-navtitle">
+                            <li class="title projects-nav-item"><a class="nav-item-active" id="click-admiral">Rostov-on-Don, Admiral</a></li>
+                            <li class="title projects-nav-item"><a class="nav-item-inactive" id="click-thieves">Sochi Thieves</a></li>
+                            <li class="title projects-nav-item"><a class="nav-item-inactive" id="click-patriotic">Rostov-on-Don Patriotic</a></li>
+                        </ul>
+                        <div class="projects-img-box projects-admiral-img"></div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section class="ic-control ic-section-white"></section>
-        <section class="ic-repair ic-section-white"></section>
+        <section class="control section-white" id="control">
+            <div>
+                <h2 class="subtitle control-title"></h2>
+            </div>
+            <div class="control-icon">
+
+            </div>
+            <div class="control-video">
+
+            </div> 
+        </section>
+        <section class="repair section-white" id="repair">
+            <div class="body-container-wide"></div>
+        </section>
     </main>    
 </body>
 </html>
