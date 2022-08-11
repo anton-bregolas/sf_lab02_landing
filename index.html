@@ -8,23 +8,23 @@
     <title>SF Lab 02: Landing page project</title>
 </head>
 <body>
-    <header class="ic-section-black">
-        <div class="ic-header-container">
-            <div class="ic-logo">
+    <header class="section-black">
+        <div class="header-container" id="home">
+            <div class="logo">
                 IC "Repair Design Project"
             </div>
             <nav>
-                <ul class="ic-header-nav">
-                    <li class="ic-header-nav-item"><a href="#""><b>HOME</b></a></li>
-                    <li class="ic-header-nav-item"><a href="#"">PROJECTS</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">MEASUREMENT</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">TEAM</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">REVIEWS</a></li>
-                    <li class="ic-header-nav-item"><a href="#"">CONTACTS</a></li>
+                <ul class="header-nav">
+                    <li class="header-nav-item"><a href="#home"><b>HOME</b></a></li>
+                    <li class="header-nav-item"><a href="#projects">PROJECTS</a></li>
+                    <li class="header-nav-item"><a href="#repair">MEASUREMENT</a></li>
+                    <li class="header-nav-item"><a href="#control">TEAM</a></li>
+                    <li class="header-nav-item"><a href="#clients">REVIEWS</a></li>
+                    <li class="header-nav-item"><a href="#contacts">CONTACTS</a></li>
                 </ul>
             </nav>
-            <div class="ic-phone">
-                <a href="#"">+7 (928) 768-32-39</a>
+            <div class="header-phone">
+                <a href="#">+7 (928) 768-32-39</a>
             </div>
             <button class="button-full button-header">
                 Request a call
@@ -32,16 +32,158 @@
         </div>
     </header>
     <main>
-        <section class="ic-intro-img ic-section-black">
-            <div class="ic-body-container">
-                <h1 class="title ic-intro-title">Turnkey Repair in the city of <b>Rostov-on-Don</b></h1>
-                <p class="text-p ic-intro-text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% from cost of materials due to the organization of work</p>
-                <button class="button-full button-body-cost">
+        <section class="intro-screen section-black">
+            <div class="body-container">
+                <h1 class="title intro-title">Turnkey Repair in the city of <b>Rostov-on-Don</b></h1>
+                <p class="text-p intro-text">Get ready-made turnkey repairs on time<br> with work time saving up to 45 days and 20% 
+                from cost of materials due to the organization of work</p>
+                <button class="button-full button-intro-cost">
                     Calculate the cost
                 </button>
-                <button class="button-empty button-body-application">
+                <button class="button-empty button-intro-application">
                     Submit your application
                 </button>
+            </div>
+        </section>
+        <section class="projects section-black" id="projects">
+            <div class="body-container">
+                <div class="projects-container">
+                    <div class="projects-column-left">
+                        <div>
+                            <h2 class="title projects-title">Completed<br> projects</h2>
+                            <p class="text-p projects-text">Only a small part of the work performed by our company is presented on the site. 
+                            For 14 years on in the construction<br> market we have made happy more than 1000 families</p>
+                        </div>
+                        <div class="projects-grid">
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">City:</h3>
+                                <p class="text-p projects-subtext">Rostov-on-Don<br> LCD admiral</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Apartment area:</h3>
+                                <p class="text-p projects-subtext">81 m2</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Repair time:</h3>
+                                <p class="text-p projects-subtext">3.5 months</p>
+                            </div>
+                            <div class="projects-details">
+                                <h3 class="title projects-subtitle">Repair cost:</h3>
+                                <p class="text-p projects-subtext">Upon request</p>
+                            </div>
+                        </div>
+                        <div class="projects-arrow-nav">
+                            <a class="projects-slider"><span class="projects-arrow-left"></span></a>
+                            <a class="projects-slider" id="click-admiral"><span class="projects-bullet bullet-active"></span></a>
+                            <a class="projects-slider" id="click-thieves"><span class="projects-bullet bullet-inactive"></span></a>
+                            <a class="projects-slider" id="click-patriotic"><span class="projects-bullet bullet-inactive"></span></a>
+                            <a class="projects-slider"><span class="projects-arrow-right"></span></a>
+                        </div>
+                    </div>
+                    <div class="projects-column-right">
+                        <ul class="projects-navtitle">
+                            <li class="title projects-nav-item"><a class="nav-item-active" id="click-admiral">Rostov-on-Don, Admiral</a></li>
+                            <li class="title projects-nav-item"><a class="nav-item-inactive" id="click-thieves">Sochi Thieves</a></li>
+                            <li class="title projects-nav-item"><a class="nav-item-inactive" id="click-patriotic">Rostov-on-Don Patriotic</a></li>
+                        </ul>
+                        <div class="projects-img-box projects-admiral-img"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="control body-container" id="control">
+            <h2 class="subtitle control-title">Online control</h2>
+            <div class="icon-container">
+                <div class="img-container">
+                    <img class="control-icon" src="./images/control-icon.svg" alt="Online control icon">
+                </div>
+            </div>
+            <div class="video-container">
+                <div class="control-video"></div>
+                <button class="button-play"><img src="./images/play-icon.svg" alt="Play video"></button>
+            </div>
+            <div class="control-text">
+                <p class="text-p text-descr color-theme-light">At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+                At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast 
+                from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
+            </div>
+            <form class="control-form-container">
+                <div class="input-form-container-limited control-input-margins">
+                    <label class="input-form-label text-p text-input-label color-theme-light-grey">Name</label>
+                    <input class="input-form-text text-p text-input-label color-theme-light" placeholder="What is your name:">
+                </div>
+                <div class="input-form-container-limited control-input-margins">
+                    <label class="input-form-label text-p text-input-label color-theme-light-grey">Phone</label>
+                    <input class="input-form-text text-p text-input-label color-theme-light" placeholder="Your phone number:">
+                </div>
+                <button class="button-full button-submit">Submit</button>
+                <div class="input-form-agree">
+                    <label class="input-checkbox-label">
+                      <input type="checkbox" class="input-checkbox">
+                      <span class="input-checkbox-fake"></span>
+                      <span class="text-p text-input">I agree to the processing of personal data.</span>
+                    </label>
+                </div>
+            </form>
+        </section>
+        <section class="repair section-white" id="repair">
+            <div class="body-container-wide">
+                <h2 class="subtitle repair-title">Types of repair</h2>
+                <div class="icon-container">
+                    <div class="img-container">
+                        <img class="repair-icon" src="./images/repair-icon.svg" alt="Online control icon">
+                    </div>
+                </div>
+                <div class="repair-cards-container">
+                    <div class="repair-cards">
+                        <div class="repair-img-box repair-redecorating-img"></div>
+                        <div class="repair-list">
+                            <h3 class="card-title color-theme-light">Redecorating</h2>
+                            <ul class="text-p text-list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <button class="button-full button-prices card-title">From 900 rub / m2</button>
+                    </div>
+                    <div class="repair-cards">
+                        <div class="repair-img-box repair-overhaul-img"></div>
+                        <div class="repair-list">
+                            <h3 class="card-title color-theme-light">Overhaul</h2>
+                            <ul class="text-p text-list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                        </div>
+                        <button class="button-full button-prices card-title">From 1800 rub / m2</button>
+                    </div>
+                    <div class="repair-cards">
+                        <div class="repair-img-box repair-designer-img"></div>
+                        <div class="repair-list">
+                            <h3 class="card-title color-theme-light">Designer Repair</h2>
+                            <ul class="text-p text-list">
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>                         
+                        </div>
+                        <button class="button-full button-prices card-title">From 4000 rub / m2</button>
+                    </div>
+                </div>
             </div>
         </section>
     </main>    
