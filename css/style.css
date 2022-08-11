@@ -74,7 +74,7 @@ body * {
     border-radius: 2px;
 }
 
-.button-full, .button-empty:hover {
+.button-full, .button-empty, .button-play:hover {
     cursor: pointer;
 }
 
@@ -102,6 +102,7 @@ body * {
     font-weight: 400;
     font-size: 18px;
     line-height: 25px;
+    margin: 0;
 }
 
 .text-p {
@@ -110,31 +111,76 @@ body * {
     font-weight: 400;
 }
 
+.text-descr {
+    font-size: 18px;
+    line-height: 37px;
+    text-align: center;
+    padding-top: 34.46px;
+    margin: 0 auto;
+}
+
+.text-descr-side {
+    font-size: 18px;
+    line-height: 26px;
+}
+
 .text-list {
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
     line-height: 27px;
     color: #959595;
+    padding: 0;
+    margin: 13px 0 0;
+    list-style: inside;
+}
+
+.text-list li:before {
+    content: "";
+    margin-left: -9px;
+}
+
+.text-list-side {
+    font-size: 14px;
+    line-height: 19px;
+    color: #363636;
+}
+
+.text-menu-side {
+    font-size: 20px;
+    line-height: 38px;
+    color: #FFFFFF;
 }
 
 .text-card {
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 13px;
     line-height: 180%;
     /* or 23px */
     color: #959595;
 }
 
+.text-input-label {
+    font-size: 13px;
+    line-height: 21px;
+}
+
 .text-input {
-    font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 23px;
+}
+
+.color-theme-light {
+    color: #363636;
+}
+
+.color-theme-light-grey {
+    color: rgba(54, 54, 54, 0.5);
+}
+
+.color-theme-dark {
+    color: #FFFFFF;
+}
+
+.color-theme-dark-grey {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .section-black {
@@ -237,13 +283,13 @@ body * {
     color: #FFFFFF;
 }
 
-.button-body-cost {
+.button-intro-cost {
     padding: 20px 42px;
     height: 51px;
     width: 207px;
 }
 
-.button-body-application {
+.button-intro-application {
     padding: 20px 22px;
     height: 51px;
     width: 207px;
@@ -380,11 +426,10 @@ body * {
 }
 
 .projects-bullet {
-    display: inline-block;
+    display: inline-flex;
     height: 9.57px;
     width: 9.57px;
     border-radius: 30px;
-    display: inline-flex;
 }
 
 .bullet-active {
@@ -432,17 +477,67 @@ body * {
     background-image: url("../images/projects-patriotic.png");
 }
 
+.control {
+    background: none;
+}
+
 .control-title {
     color: #FFFFFF;
+    margin: -324px 0 0 0;
+}
+
+.icon-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.img-container {
+    display: flex;
+    width:114px;
+    justify-content: center;
+    position: relative;
+}
+
+.img-container::after {
+    position:absolute;
+    content:"";
+    top: 50%;
+    right: 0;
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
+}
+
+.img-container::before {
+    position:absolute;
+    content:"";
+    top: 50%;
+    left: 0;
+    width: 32px;
+    height: 1.54px;
+    background: #E3B873;
 }
 
 .control-icon {
-    background-image: url("../images/control-icon.svg");
+    width: 32.77px;
+    height: 28px;
+}
+
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 31.21px auto 0;
 }
 
 .control-video {
     background-image: url("../images/work-progress.png");
     position: relative;
+    background-size: cover;
+    height: 434px;
+    width: 817px;
 }
 
 .control-video::before {
@@ -455,13 +550,155 @@ body * {
     background: rgba(0, 0, 0, 0.8);
 }
 
+.button-play {
+    display: flex;
+    width: 85px;
+    height: 85px;
+    border-radius: 50%;
+    background: #e3b873;
+    box-shadow: 0px 5px 30px rgba(227, 184, 115, 0.2);
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    outline: 0;
+    border: 0;
+}
+
+.control-text {
+    position: relative;
+    margin: 62.5px auto 91.5px;
+    width: 681px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.control-text::before {
+    position:absolute;
+    content:"";
+    top: 0;
+    width: 55px;
+    height: 1.54px;
+    background: #E3B873;
+}
+
+.control-form-container {
+    width: 769px;
+    margin: 0 auto 75.85px;
+    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+
+    justify-content: center;
+}
+
+.control-input-margins {
+    margin: 0 0 37px 0;
+}
+
+.input-form-container-limited {
+    display: flex;
+    flex-flow: column;
+    width: 231px;
+    margin: 0 53px 37px 0;
+}
+
+.input-form-container-stretched {
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+}
+
+.input-form-text {
+    border: none;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+    outline: none;
+    padding: 0;
+}
+
+.input-form-agree {
+    display: flex;
+}
+
+.input-checkbox-label {
+    cursor: pointer;
+}
+  
+.input-checkbox {
+    display: none;
+}
+  
+.input-checkbox-fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+    margin-right: 5px;
+}
+  
+.input-checkbox-fake::before{
+    content:"\2714";
+    opacity: 0;
+    transition: .2s;
+}
+  
+.input-checkbox:checked + .input-checkbox-fake::before{
+    opacity: 1;
+}
+
+.button-submit {
+    padding: 20px 75px;
+    height: 51px;
+    width: 200px;
+}
+
+.repair-title {
+    color: #181818;
+    margin: 0 auto;
+}
+
 .repair-icon {
-    background-image: url("../images/repair-icon.svg");
+    width: 28px;
+    height: 28px;
+}
+
+.repair-cards-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 31px;
+}
+
+.repair-cards {
+    height: 608px;
+    display: flex;
+    flex-flow: column;
 }
 
 .repair-img-box {
     height: 421px;
     width: 392px;
+}
+
+.repair-list {
+    width: 330px;
+    height: 286px;
+    margin: -127px auto 0px;
+    padding-top: 25px;
+    padding-left: 34px;
+    background-color: #FFFFFF;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+}
+
+.button-prices {
+    padding-top: 17px;
+    padding-bottom: 17px;
+    height: 54px;
+    width: 228px;
+    text-transform: uppercase;
+    margin-top: -27px;
+    margin-left: 31px;
 }
 
 .repair-redecorating-img {
