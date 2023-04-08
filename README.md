@@ -1,2 +1,3 @@
-# sf-lab02-landing
-SF Lab 02: Landing page project
+SF Lab 02: Landing page project. Main branch.
+All work in progress is in branch develop.
+==================================================================
