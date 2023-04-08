@@ -63,6 +63,32 @@ body * {
     border: 0;
 }
 
+.header-container .button-full:hover {
+    padding-top: 12px;
+    background-color: #181818;
+    border: 1px solid #FFFFFF;
+}
+
+.intro-screen .button-full:hover {
+    padding-top: 19px;
+    background: transparent;
+    border: 1px solid #FFFFFF;
+}
+
+.control .button-full:hover {
+    padding-top: 19px;
+    background: #181818;
+    color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
+.repair .button-full:hover {
+    padding-top: 16px;
+    background: #181818;
+    color: #E3B873;
+    border: 1px solid #E3B873;
+}
+
 .button-empty {
     font-family: 'Nunito Sans', Helvetica, Arial, sans-serif;
     font-style: italic;
