@@ -13,7 +13,7 @@
             <div class="logo">
                 IC "Repair Design Project"
             </div>
-            <nav>
+            <nav class="navigation-links">
                 <ul class="header-nav">
                     <li class="header-nav-item"><a href="#home"><b>HOME</b></a></li>
                     <li class="header-nav-item"><a href="#projects">PROJECTS</a></li>
@@ -52,7 +52,11 @@
                         <div>
                             <h2 class="title projects-title">Completed<br> projects</h2>
                             <p class="text-p projects-text">Only a small part of the work performed by our company is presented on the site. 
-                            For 14 years on in the construction<br> market we have made happy more than 1000 families</p>
+                            For 14 years in the construction market we have made happy more than 1000 families</p>
+                        </div>
+                        <div class="projects-mobile-slider">
+                            <button class="button-projects button-projects-left"><img src="./images/arrow-left.svg" alt="Previous project"></button>
+                            <button class="button-projects button-projects-right"><img src="./images/arrow-right.svg" alt="Next project"></button>
                         </div>
                         <div class="projects-grid">
                             <div class="projects-details">
@@ -91,40 +95,42 @@
                 </div>
             </div>
         </section>
-        <section class="control body-container" id="control">
-            <h2 class="subtitle control-title">Online control</h2>
-            <div class="icon-container">
-                <div class="img-container">
-                    <img class="control-icon" src="./images/control-icon.svg" alt="Online control icon">
+        <section class="control" id="control">
+            <div class="body-container">
+                <h2 class="subtitle control-title">Online control</h2>
+                <div class="icon-container">
+                    <div class="img-container">
+                        <img class="control-icon" src="./images/control-icon.svg" alt="Online control icon">
+                    </div>
                 </div>
+                <div class="video-container">
+                    <div class="control-video"></div>
+                    <button class="button-play"><img src="./images/play-icon.svg" alt="Play video"></button>
+                </div>
+                <div class="control-text">
+                    <p class="text-p text-descr color-theme-light">At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+                    At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast 
+                    from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
+                </div>
+                <form class="control-form-container">
+                    <div class="input-form-container-limited control-input-margins">
+                        <label class="input-form-label text-p text-input-label color-theme-light-grey">Name</label>
+                        <input class="input-form-text text-p text-input-label color-theme-light" placeholder="What is your name:">
+                    </div>
+                    <div class="input-form-container-limited control-input-margins">
+                        <label class="input-form-label text-p text-input-label color-theme-light-grey">Phone</label>
+                        <input class="input-form-text text-p text-input-label color-theme-light" placeholder="Your phone number:">
+                    </div>
+                    <button class="button-full button-submit">Submit</button>
+                    <div class="input-form-agree">
+                        <label class="input-checkbox-label">
+                        <input type="checkbox" class="input-checkbox">
+                        <span class="input-checkbox-fake"></span>
+                        <span class="text-p text-input">I agree to the processing of personal data.</span>
+                        </label>
+                    </div>
+                </form>
             </div>
-            <div class="video-container">
-                <div class="control-video"></div>
-                <button class="button-play"><img src="./images/play-icon.svg" alt="Play video"></button>
-            </div>
-            <div class="control-text">
-                <p class="text-p text-descr color-theme-light">At each facility, a camera is installed that broadcasts the progress of work on the clock. 
-                At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast 
-                from one of our facilities! <br>Leave a request below and you will receive a link to the broadcast.</p>
-            </div>
-            <form class="control-form-container">
-                <div class="input-form-container-limited control-input-margins">
-                    <label class="input-form-label text-p text-input-label color-theme-light-grey">Name</label>
-                    <input class="input-form-text text-p text-input-label color-theme-light" placeholder="What is your name:">
-                </div>
-                <div class="input-form-container-limited control-input-margins">
-                    <label class="input-form-label text-p text-input-label color-theme-light-grey">Phone</label>
-                    <input class="input-form-text text-p text-input-label color-theme-light" placeholder="Your phone number:">
-                </div>
-                <button class="button-full button-submit">Submit</button>
-                <div class="input-form-agree">
-                    <label class="input-checkbox-label">
-                      <input type="checkbox" class="input-checkbox">
-                      <span class="input-checkbox-fake"></span>
-                      <span class="text-p text-input">I agree to the processing of personal data.</span>
-                    </label>
-                </div>
-            </form>
         </section>
         <section class="repair section-white" id="repair">
             <div class="body-container-wide">
@@ -136,7 +142,9 @@
                 </div>
                 <div class="repair-cards-container">
                     <div class="repair-cards">
-                        <div class="repair-img-box repair-redecorating-img"></div>
+                        <div class="repair-img-box">
+                            <div class="repair-redecorating-img"></div>
+                        </div>
                         <div class="repair-list">
                             <h3 class="card-title color-theme-light">Redecorating</h2>
                             <ul class="text-p text-list">
@@ -152,7 +160,9 @@
                         <button class="button-full button-prices card-title">From 900 rub / m2</button>
                     </div>
                     <div class="repair-cards">
-                        <div class="repair-img-box repair-overhaul-img"></div>
+                        <div class="repair-img-box">
+                            <div class="repair-overhaul-img"></div>
+                        </div>
                         <div class="repair-list">
                             <h3 class="card-title color-theme-light">Overhaul</h2>
                             <ul class="text-p text-list">
@@ -168,7 +178,9 @@
                         <button class="button-full button-prices card-title">From 1800 rub / m2</button>
                     </div>
                     <div class="repair-cards">
-                        <div class="repair-img-box repair-designer-img"></div>
+                        <div class="repair-img-box">
+                            <div class="repair-designer-img"></div>
+                        </div>
                         <div class="repair-list">
                             <h3 class="card-title color-theme-light">Designer Repair</h2>
                             <ul class="text-p text-list">
@@ -189,3 +201,4 @@
     </main>    
 </body>
 </html>
+
